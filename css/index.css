@@ -152,17 +152,19 @@ header h1.title {
     height: 40px;
   }
 }
+header h1.title span.highlighter {
+  color: #ffc9dd;
+}
 header h4.underTitle {
   width: 100%;
   font-size: 25px;
   height: 35px;
   text-align: left;
   /*padding-left: 15px;*/
-  color: #ffe3ed;
   font-family: 'Open Sans Condensed';
   letter-spacing: 12px;
   margin: 0;
-  color: #FFFDF9;
+  color: #ffe3ed;
 }
 @media (max-width:800px) {
   header h4.underTitle {
@@ -179,6 +181,12 @@ header h4.underTitle {
     letter-spacing: 3px;
     height: 30px;
   }
+}
+header h4.underTitle span#highlighter2 {
+  color: #93cad5;
+}
+header h4.underTitle span.highlighter {
+  color: #ffe3ed;
 }
 header #signup {
   background-color: #8ac6d1;
@@ -370,11 +378,10 @@ section#trSubject section.trSubjectCards #poliSci {
 }
 /*Trending Articles*/
 section#trArticles {
-  height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   background-color: #FFFDF9;
+  margin-bottom: 30px;
   /*box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);*/
 }
 section#trArticles h3.trArticlesTitle {
@@ -385,5 +392,97 @@ section#trArticles h3.trArticlesTitle {
   font-family: 'Open Sans Condensed';
   letter-spacing: 8px;
   color: #555555;
-  margin: 35px auto 0 auto;
+  margin: 35px auto;
+}
+@media (max-width:800px) {
+  section#trArticles h3.trArticlesTitle {
+    font-size: 30px;
+    height: 40px;
+    line-height: 30px;
+    margin: 30px auto;
+  }
+}
+@media (max-width:1000px) {
+  section#trArticles h3.trArticlesTitle {
+    font-size: 30px;
+    height: 40px;
+    line-height: 30px;
+    margin: 30px auto;
+  }
+}
+section#trArticles section.trArticlesSection {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width:800px) {
+  section#trArticles section.trArticlesSection {
+    width: 100%;
+  }
+}
+@media (max-width:1000px) {
+  section#trArticles section.trArticlesSection {
+    width: 100%;
+  }
+}
+section#trArticles section.trArticlesSection div.articleCard {
+  width: 80%;
+  /*height: 200px;*/
+  border: 0.45px solid #555555;
+  margin: 15px auto;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 25px;
+}
+section#trArticles section.trArticlesSection div.articleCard:hover {
+  box-shadow: 1px 0.5px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width:800px) {
+  section#trArticles section.trArticlesSection div.articleCard {
+    width: 90%;
+  }
+}
+section#trArticles section.trArticlesSection div.articleCard .articleTag {
+  color: #8ac6d1;
+  font-family: 'Open Sans Condensed';
+  font-size: 22px;
+}
+section#trArticles section.trArticlesSection div.articleCard .articleTitle {
+  color: #555555;
+  font-family: 'Raleway';
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0px;
+}
+section#trArticles section.trArticlesSection div.articleCard .articleDate {
+  color: #ffb0cc;
+  font-family: 'Open Sans Condensed';
+  width: 100%;
+  text-align: right;
+}
+section#trArticles section.trArticlesSection div.articleCard .articleBlurb {
+  color: #555555;
+  font-family: 'Open Sans Condensed';
+  font-size: 20px;
+}
+section#trArticles section.trArticlesSection div.articleCard .articleAuthor {
+  font-family: 'Open Sans Condensed';
+  font-size: 20px;
+  text-align: left;
+  color: #8ac6d1;
+  margin: 0px;
 }

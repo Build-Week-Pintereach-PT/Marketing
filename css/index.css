@@ -6,6 +6,11 @@
 /*Default card photo mixin with parametric naming [@name value should be name of image file]*/
 /*Font family mixin with parametric sizing*/
 /*// General Styles*/
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+}
 body {
   width: 100%;
   padding: 0;

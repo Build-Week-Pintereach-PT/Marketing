@@ -553,7 +553,7 @@ section#trArticles section.trArticlesSection div.articleCard .articleAuthor {
   margin: 35px auto;
 }
 .container .ap-main .ap-card {
-  height: 300px;
+  height: 600px;
   width: 45%;
   background-color: red;
   margin: 10px auto;
@@ -562,13 +562,50 @@ section#trArticles section.trArticlesSection div.articleCard .articleAuthor {
 }
 .container .ap-main .ap-card .ap-photo {
   background-color: blue;
-  height: 100px;
+  height: 500px;
   width: 100%;
+}
+.container .ap-main .ap-card #eunice {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Eunice.png');
+}
+.container .ap-main .ap-card #daniel {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Daniel.png');
+}
+.container .ap-main .ap-card #michael {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Michael.png');
+}
+.container .ap-main .ap-card #jason {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Jason.png');
+}
+.container .ap-main .ap-card #priya {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Priya.png');
+}
+.container .ap-main .ap-card #tim {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/Tim.png');
 }
 .container .ap-main .ap-card .ap-content {
   width: 100%;
   background-color: yellow;
   margin: auto auto 0px auto;
+  padding: 20px;
 }
 .container .ap-main .ap-card .ap-content h3 {
   font-family: "Open Sans Condensed";

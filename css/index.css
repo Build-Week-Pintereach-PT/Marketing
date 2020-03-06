@@ -1,6 +1,10 @@
 /*// Variables*/
 /*// Mobile var*/
+/*colors*/
+/*Fonts*/
 /*// Mixins Here*/
+/*Default card photo mixin with parametric naming [@name value should be name of image file]*/
+/*Font family mixin with parametric sizing*/
 /*// General Styles*/
 body {
   width: 100%;
@@ -75,6 +79,7 @@ footer h5.footerContent {
   font-size: 20px;
   color: #FFFDF9;
 }
+/*HOME LESS STYLING*/
 .tMain {
   height: 100vh;
   width: 100vw;
@@ -121,12 +126,12 @@ header section#slogan {
 }
 header h1.title {
   width: 100%;
-  font-size: 90px;
   height: 90px;
   text-align: left;
   padding: 0;
   color: #8ac6d1;
   font-family: 'Raleway';
+  font-size: 90px;
   letter-spacing: 9px;
   margin: 0;
 }
@@ -151,11 +156,10 @@ header h1.title span.highlighter {
 }
 header h4.underTitle {
   width: 100%;
-  font-size: 25px;
   height: 35px;
   text-align: left;
-  /*padding-left: 15px;*/
   font-family: 'Open Sans Condensed';
+  font-size: 25px;
   letter-spacing: 12px;
   margin: 0;
   color: #ffe3ed;
@@ -192,6 +196,7 @@ header #signup {
   line-height: 30px;
   text-align: center;
   font-family: 'Open Sans Condensed';
+  font-size: default;
   letter-spacing: 6px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -233,10 +238,10 @@ section#trSubject {
 }
 section#trSubject h3.trSubjectTitle {
   width: 85%;
-  font-size: 40px;
   height: 40px;
   text-align: center;
   font-family: 'Open Sans Condensed';
+  font-size: 40px;
   letter-spacing: 8px;
   color: #555555;
   margin: 35px auto;
@@ -279,7 +284,7 @@ section#trSubject section.trSubjectCards div.trCard {
   display: flex;
   width: 275px;
   height: 300px;
-  background-color: #FFFDF9;
+  background-color: #fffdf9;
   border-radius: 9px;
   box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
   color: #1b262c;
@@ -288,6 +293,7 @@ section#trSubject section.trSubjectCards div.trCard {
   align-items: center;
   letter-spacing: 5px;
   font-family: 'Open Sans Condensed';
+  font-size: default;
   margin: 15px auto;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -320,13 +326,13 @@ section#trSubject section.trSubjectCards div.trCard h4.trCardTitle {
   display: flex;
   width: 250px;
   height: 30px;
-  font-size: 25px;
-  color: #FFFDF9;
+  color: #fffdf9;
   text-align: center;
   justify-content: center;
   align-items: center;
   letter-spacing: 6px;
   font-family: 'Open Sans Condensed';
+  font-size: 25px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -334,7 +340,7 @@ section#trSubject section.trSubjectCards div.trCard h4.trCardTitle {
 }
 section#trSubject section.trSubjectCards div.trCard h4.trCardTitle:hover {
   text-decoration: underline;
-  text-decoration-color: #FFFDF9;
+  text-decoration-color: #fffdf9;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -374,16 +380,15 @@ section#trSubject section.trSubjectCards #poliSci {
 section#trArticles {
   width: 100vw;
   display: block;
-  background-color: #FFFDF9;
+  background-color: #fffdf9;
   margin-bottom: 30px;
-  /*box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);*/
 }
 section#trArticles h3.trArticlesTitle {
   width: 85%;
-  font-size: 40px;
   height: 40px;
   text-align: center;
   font-family: 'Open Sans Condensed';
+  font-size: 40px;
   letter-spacing: 8px;
   color: #555555;
   margin: 35px auto;
@@ -424,7 +429,6 @@ section#trArticles section.trArticlesSection {
 }
 section#trArticles section.trArticlesSection div.articleCard {
   width: 80%;
-  /*height: 200px;*/
   border: 0.45px solid #555555;
   margin: 15px auto;
   border-radius: 9px;
@@ -458,6 +462,7 @@ section#trArticles section.trArticlesSection div.articleCard .articleTag {
 section#trArticles section.trArticlesSection div.articleCard .articleTitle {
   color: #555555;
   font-family: 'Raleway';
+  font-size: default;
   width: 100%;
   text-align: left;
   margin-bottom: 0px;
@@ -465,11 +470,12 @@ section#trArticles section.trArticlesSection div.articleCard .articleTitle {
 section#trArticles section.trArticlesSection div.articleCard .articleDate {
   color: #ffb0cc;
   font-family: 'Open Sans Condensed';
+  font-size: initial;
   width: 100%;
   text-align: right;
 }
 section#trArticles section.trArticlesSection div.articleCard .articleBlurb {
-  color: #555555;
+  color: #333333;
   font-family: 'Open Sans Condensed';
   font-size: 20px;
 }

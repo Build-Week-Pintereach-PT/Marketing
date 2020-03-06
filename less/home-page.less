@@ -1,7 +1,8 @@
+/*HOME LESS STYLING*/
+
 .tMain{
   height: 100vh;
   width: 100vw;
-
   background-image: url('../images/aDark2.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -9,20 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*Header Section*/
 
@@ -47,6 +35,7 @@ header{
   section#slogan{
     width: 80%;
     height: 100%;
+
     @media @tablet{
       width: 100%;
     }
@@ -59,14 +48,14 @@ header{
 
   h1.title{
     width: 100%;
-    font-size: 90px;
     height: 90px;
     text-align: left;
     padding: 0;
-    color: #8ac6d1;
-    font-family: 'Raleway', ;
+    color: @P_green;
+    .raleway(90px);
     letter-spacing: 9px;
     margin: 0;
+
     @media @mobile{
       text-align: center;
       font-size: 40px;
@@ -82,23 +71,20 @@ header{
     }
 
     span.highlighter{
-      color: darken(#ffe3ed,5%);
+      color: darken(@P_pink,5%);
     }
 
   }
 
   h4.underTitle{
     width: 100%;
-    font-size: 25px;
     height: 35px;
     text-align: left;
-
-    /*padding-left: 15px;*/
-    
-    font-family: 'Open Sans Condensed', ;
+    .openSans(25px);
     letter-spacing: 12px;
     margin: 0;
-    color: #ffe3ed;
+    color: @P_pink;
+
     @media @mobile{
       text-align: center;
       font-size: 20px;
@@ -114,78 +100,71 @@ header{
     }
 
     span#highlighter2{
-      color:lighten(#8ac6d1,2.5%);
+      color:lighten(@P_green,2.5%);
     }
 
     span.highlighter{
-      color:#ffe3ed;
+      color:@P_pink;
     }
-
   }
 
   #signup{
-    background-color: #8ac6d1;
-    color:#ffe3ed;
+    background-color: @P_green;
+    color:@P_pink;
     width: 190px;
     height: 30px;
     border-radius: 15px;
     margin: 10px auto auto 0;
     line-height: 30px;
     text-align: center;
-    font-family: 'Open Sans Condensed', ;
+    .openSans(default);
     letter-spacing: 6px;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      background-color: @P_pink;
+      color: @P_green;
+      -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
-
-    &:hover{
-      background-color: #ffe3ed;
-      color: #8ac6d1;
-      -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
+      cursor: pointer;
     }
 
     @media @tablet{
       margin: 10px auto;
     }
+
   }
 
-
 }
-
-
 
 /*Trending Subjects*/
 
 section#trSubject{
   padding: 30px auto 30px auto;
   width: 100vw;
-  display: block;
-  
-  background-color: #fffdf9;
+  display: block;  
+  background-color: @P_white;
 
   @media @mobile{
     display: block;
     height: 100%;
-
   }
 
   @media @tablet{
     display: block;
     height: 100%;
-  }
-  
+  }  
 
   h3.trSubjectTitle{
     width: 85%;
-    font-size: 40px;
     height: 40px;
     text-align: center;
-    font-family: 'Open Sans Condensed', ;
+    .openSans(40px);
     letter-spacing: 8px;
     color: #555555;
     margin: 35px auto;
@@ -195,8 +174,6 @@ section#trSubject{
      height: 40px;
      line-height: 30px;
      margin: 30px auto;
-     
-
     }
 
     @media @tablet{
@@ -210,23 +187,20 @@ section#trSubject{
 
   section.trSubjectCards{
     .sectionCards();
+
     @media @mobile{
-      width: 100%;
-
-     
-
+    width: 100%;
     }
 
     @media @tablet{
       width: 100%;
     }
 
-
     div.trCard{
       display: flex;
       width: 275px;
       height: 300px;
-      background-color: #FFFDF9;
+      background-color: @P_white;
       border-radius: 9px;
       box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
       color: #1b262c;
@@ -234,28 +208,26 @@ section#trSubject{
       justify-content: space-around;
       align-items: center;
       letter-spacing: 5px;
-      font-family: 'Open Sans Condensed', ;
+      .openSans(default);
       margin: 15px auto;
       -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       &:hover{
         box-shadow: none;
         cursor: pointer;
         -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
 
       @media @mobile{
         width: 90%;
         height: 200px;
         margin: 15px auto;
-     
-
       }
 
       @media @tablet{
@@ -264,34 +236,32 @@ section#trSubject{
         margin: 15px auto;
       }
 
-
       h4.trCardTitle{
         display: flex;
         width: 250px;
         height: 30px;
-        font-size: 25px;
-        color: #FFFDF9; 
+        color: @P_white; 
         text-align: center;
         justify-content: center;
         align-items: center;
         letter-spacing: 6px;
-        font-family: 'Open Sans Condensed', ;
+        .openSans(25px);
         -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-      
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;      
 
         &:hover{
           text-decoration:underline;
-          text-decoration-color: #FFFDF9;
+          text-decoration-color: @P_white;
           -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
 
       }
+
     }
 
     #quantum{
@@ -331,27 +301,21 @@ section#trSubject{
 
   }
 
-
 }
-
-
 
 /*Trending Articles*/
 
-section#trArticles{
-  
+section#trArticles{  
   width: 100vw;
   display: block;
-  background-color: #FFFDF9;
+  background-color: @P_white;
   margin-bottom: 30px;
-  /*box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);*/
 
   h3.trArticlesTitle{
     width: 85%;
-    font-size: 40px;
     height: 40px;
     text-align: center;
-    font-family: 'Open Sans Condensed', ;
+    .openSans(40px);
     letter-spacing: 8px;
     color: #555555;
     margin: 35px auto;
@@ -361,8 +325,6 @@ section#trArticles{
      height: 40px;
      line-height: 30px;
      margin: 30px auto;
-     
-
     }
 
     @media @tablet{
@@ -387,7 +349,6 @@ section#trArticles{
 
     div.articleCard{
       width: 80%;
-      /*height: 200px;*/
       border: .45px solid #555555;
       margin: 15px auto;
       border-radius: 9px;
@@ -395,18 +356,18 @@ section#trArticles{
       flex-wrap: wrap;
       box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
       -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        padding: 25px;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      padding: 25px;
 
       &:hover{
         box-shadow: 1px .5px 2px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
 
       @media @mobile{
@@ -414,14 +375,13 @@ section#trArticles{
       }
 
       .articleTag{
-        color: #8ac6d1;
-        font-family: 'Open Sans Condensed', ;
-        font-size: 22px;
+        color: @P_green;
+        .openSans(22px);
       }
 
       .articleTitle{
         color: #555555;
-        font-family: 'Raleway', ;
+        .raleway(default);
         width: 100%;
         text-align: left;
         margin-bottom: 0px;
@@ -429,32 +389,27 @@ section#trArticles{
       }
 
       .articleDate{
-        color: darken(#ffe3ed,10%);
-        font-family: 'Open Sans Condensed', ;
+        color: darken(@P_pink,10%);
+        .openSans(initial);
         width: 100%;
         text-align: right;
       }
 
       .articleBlurb{
-        color: #555555;
-        
-        font-family: 'Open Sans Condensed', ;
-        font-size: 20px;
+        color: @P_black;       
+        .openSans(20px);
       }
 
       .articleAuthor{
-        font-family: 'Open Sans Condensed', ;
-        font-size: 20px;
+        .openSans(20px);
         text-align: left;
-        color: #8ac6d1;
+        color: @P_green;
         margin: 0px;
 
       }
 
-
-
-
     }
+
   }
 
 }
